@@ -1,0 +1,1 @@
+Fixed image paths by renaming local image files to web-safe filenames (no spaces/special characters) and updating all CSS references. All original images are preserved.
