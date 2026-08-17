@@ -4,3 +4,40 @@
 
 /* Local image assets use web-safe filenames for GitHub Pages compatibility. */
 .product-img, .gift-img, .hero-photo { background-repeat: no-repeat; }
+/* FINAL IMAGE FIX - DO NOT CROP PRODUCT IMAGES */
+.product-img,
+.gift-img,
+.hero-photo {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.product-img {
+  height: 300px !important;
+}
+
+.gift-img {
+  height: 330px !important;
+}
+
+.hero-photo {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 600px !important;
+}
+
+@media (max-width: 600px) {
+  .product-img {
+    height: 280px !important;
+  }
+
+  .gift-img {
+    height: 300px !important;
+  }
+
+  .hero-photo {
+    min-height: 450px !important;
+  }
+}
